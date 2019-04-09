@@ -4,7 +4,7 @@ Use as an example and training Angular
 
 ## TODO 
 
-## Commucating between components
+## Communicating between components
 
 ### Component to component
 - [ ] BehaviorSubject
