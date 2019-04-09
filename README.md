@@ -1,6 +1,6 @@
-# Angular example code by Odds 
+# Angular example by Odds 
 
-Use as an example and training Angular
+Use this as an example and training Angular.
 
 ## TODO 
 
