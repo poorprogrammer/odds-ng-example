@@ -1,6 +1,6 @@
-# OddsNgExample
+# Angular example code by Odds 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Use as an example and training Angular
 
 ## Development server
 
@@ -10,7 +10,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 # TODO 
 
 ## Commucating between components
-- [] BehaviorSubject
+### Component to component
+- [-] BehaviorSubject
+- [-] Simple properties
 
 ## Running unit tests
 
