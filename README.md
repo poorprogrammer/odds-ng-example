@@ -11,5 +11,6 @@ Use as an example and training Angular
 - [ ] Simple properties
 
 ### Parent to Child 
-- [x] Sharing Data via Input ใช้งาน @Input ก็ดูอธิบายง่ายดี เช่น Commponent นี้รับ input อะไรบ้าง 
+- [x] Sharing Data via Input 
+น่าจะเป็นวิธีที่นิยมสูงสุด โดยใช้งาน @Input ก็ดูอธิบายง่ายดี เช่น Commponent นี้รับ input อะไรบ้าง 
 
