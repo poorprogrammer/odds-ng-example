@@ -3,10 +3,42 @@ import { TestBed } from '@angular/core/testing';
 import { ProgressService } from './progress.service';
 
 describe('ProgressService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+
+  let service: ProgressService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.get(ProgressService);
+  });
 
   it('should be created', () => {
-    const service: ProgressService = TestBed.get(ProgressService);
     expect(service).toBeTruthy();
   });
+
+  it('should have 0 progress on init', () => {
+    service.getProgress().subscribe(
+      v => expect(v).toBe(0)
+    );
+  });
+
+  it('should have 10 progress when single increase', () => {
+    service.increase();
+    service.getProgress().subscribe(
+      v => expect(v).toBe(10)
+    );
+  });
+
+  it('should have 10 progress when single decrease', () => {
+    // arrange 30
+    service.increase();
+    service.increase();
+    service.increase();
+    // act
+    service.decrease();
+    // arrange
+    service.getProgress().subscribe(
+      v => expect(v).toBe(20)
+    );
+  });
+
 });
