@@ -35,7 +35,7 @@ describe('ProgressService', () => {
     service.increase();
     // act
     service.decrease();
-    // arrange
+    // assert
     service.getProgress().subscribe(
       v => expect(v).toBe(20)
     );
