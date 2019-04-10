@@ -22,14 +22,16 @@ describe('ProgressService', () => {
   });
 
   it('should have 10 progress when single increase', () => {
+    // act    
     service.increase();
+    // assert    
     service.getProgress().subscribe(
       v => expect(v).toBe(10)
     );
   });
 
   it('should have 10 progress when single decrease', () => {
-    // arrange 30
+    // arrange: 30
     service.increase();
     service.increase();
     service.increase();
