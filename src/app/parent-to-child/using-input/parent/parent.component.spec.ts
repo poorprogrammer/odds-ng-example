@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ParentComponent } from './parent.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('ParentComponent', () => {
   let component: ParentComponent;
@@ -8,9 +9,10 @@ describe('ParentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParentComponent ]
+      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [ParentComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
